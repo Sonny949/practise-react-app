@@ -5,6 +5,7 @@ import Categories from './components/Categories'
 import AddWhiskey from './components/AddWhiskey'
 import Nav from './components/Nav'
 import Home from './components/Home'
+import Profile from './components/Profile'
 
 
 
@@ -12,8 +13,6 @@ import Home from './components/Home'
 function App() {
   return (
     <>
-      <h1 className='text-center text-white'>Whiskey Taster</h1>
-
       <BrowserRouter >
         <Nav />
         <Routes>
@@ -21,6 +20,7 @@ function App() {
           <Route path='/whiskies' element={<Whiskey />} />
           <Route path='/categories' element={<Categories />} />
           <Route path='/newwhiskey' element={<AddWhiskey />} />
+          <Route path='/profile' element={<Profile />} />
         </Routes>
       </BrowserRouter>
     
